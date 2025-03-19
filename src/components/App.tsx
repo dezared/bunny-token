@@ -38,7 +38,7 @@ const MascotWithShake = () => {
         ease: 'easeInOut' // Плавное изменение
       }}
       style={{
-        backgroundImage: 'url(src/assets/images/mascot.png)',
+        backgroundImage: 'url(/images/mascot.png)',
         backgroundSize: 'contain'
       }}
       className="absolute left-0 top-0 size-full bg-center bg-no-repeat"
@@ -56,7 +56,7 @@ const MascotBackground = () => {
         duration: 1 // Плавное появление
       }}
       style={{
-        backgroundImage: 'url(src/assets/images/mascot-bg.png)',
+        backgroundImage: 'url(/images/mascot-bg.png)',
         backgroundSize: 'contain'
       }}
       className="absolute left-[-18px] top-[-54px] size-[120%] bg-center bg-no-repeat"
@@ -69,13 +69,13 @@ function App() {
     <div>
       <div
         className="absolute h-[900px] w-full bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(src/assets/images/bg.png)', zIndex: -6 }}
+        style={{ backgroundImage: 'url(/images/bg.png)', zIndex: -6 }}
       ></div>
       <ToastContainer />
       <motion.div
         className="absolute left-0 top-0 size-full bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url(src/assets/images/lines-bg.png)',
+          backgroundImage: 'url(/images/lines-bg.png)',
           zIndex: -5
         }}
         initial={{ y: '-5%', opacity: 0 }} // Начальное состояние: за пределами экрана и полностью прозрачный
@@ -93,7 +93,7 @@ function App() {
         <div className="mb-[60px] flex items-center justify-between p-4">
           <div className="size-[114px]">
             <img
-              src="src/assets/images/logo.png"
+              src="/images/logo.png"
               alt="Icon"
               className="size-[95px] transition-transform hover:rotate-[-20deg]"
             />

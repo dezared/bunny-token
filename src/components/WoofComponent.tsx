@@ -24,11 +24,7 @@ const MascotComponent = () => {
           ease: 'easeInOut' // Плавное изменение
         }}
       >
-        <img
-          src="src/assets/images/woof-right.png"
-          alt="Icon"
-          className="size-[737px]"
-        />
+        <img src="/images/woof-right.png" alt="Icon" className="size-[737px]" />
       </motion.div>
     </div>
   )
