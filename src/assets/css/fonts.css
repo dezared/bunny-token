@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Corbel';
+  src:
+    url('../fonts/corbel/Corbel.ttf') format('truetype'),
+    url('../fonts/corbel/Corbel Bold.ttf') format('truetype'),
+    url('../fonts/corbel/Corbel Bold Italic.ttf') format('truetype'),
+    url('../fonts/corbel/Corbel Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Font Awesome Pro';
+  src: url('../fonts/font-awesome/Font Awesome 6 Pro-Solid-900.otf');
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Font Awesome Brands';
+  src: url('../fonts/font-awesome/Font Awesome 6 Brands-Regular-400.otf');
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+}
+
+.icon::after {
+  content: attr(data-attrIcon) !important;
+}

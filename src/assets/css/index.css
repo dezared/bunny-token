@@ -1,0 +1,46 @@
+@keyframes slideAnimation {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.looper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.looper__innerList {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+
+.looper__innerList[data-animate='true'] .looper__listInstance {
+  animation: slideAnimation linear infinite;
+}
+
+.looper__listInstance {
+  display: flex;
+  width: max-content;
+
+  animation: none;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 1.5px 1.5px 0;
+  display: inline-block;
+  padding: 2px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+html {
+  scroll-behavior: smooth;
+}
