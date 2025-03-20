@@ -89,9 +89,9 @@ function App() {
         }}
       ></motion.div>
 
-      <div className="mx-[100px]" id="main">
+      <div className="mx-[20px] lg:mx-[100px]" id="main">
         <div className="mb-[60px] flex items-center justify-between p-4">
-          <div className="size-[114px]">
+          <div className="hidden size-[114px] lg:block">
             <img
               src="/images/logo.png"
               alt="Icon"
@@ -99,9 +99,9 @@ function App() {
             />
           </div>
 
-          <div className="flex gap-[110px] space-x-6">
+          <div className="flex gap-[20px] space-x-6 lg:gap-[110px]">
             <button
-              className="font-jockey text-[30px] text-[#E0C6E3] transition text-shadow-display hover:text-[#bfaac1]"
+              className="font-jockey text-[20px] text-[#E0C6E3] transition text-shadow-display hover:text-[#bfaac1] lg:text-[30px]"
               onClick={() => {
                 const mainElement = document.getElementById('main')
                 if (mainElement) {
@@ -112,7 +112,7 @@ function App() {
               HOME
             </button>
             <button
-              className="font-jockey text-[30px] text-[#E0C6E3] transition text-shadow-display hover:text-[#bfaac1]"
+              className="font-jockey text-[20px] text-[#E0C6E3] transition text-shadow-display hover:text-[#bfaac1] lg:text-[30px]"
               onClick={() => {
                 const mainElement = document.getElementById('about')
                 if (mainElement) {
@@ -123,7 +123,7 @@ function App() {
               ABOUT
             </button>
             <button
-              className="font-jockey text-[30px] text-[#E0C6E3] transition text-shadow-display hover:text-[#bfaac1]"
+              className="l:text-[30px] font-jockey text-[20px] text-[#E0C6E3] transition text-shadow-display hover:text-[#bfaac1]"
               onClick={() => {
                 const mainElement = document.getElementById('roadmap')
                 if (mainElement) {
@@ -149,8 +149,8 @@ function App() {
             </a>
           </div>
         </div>
-        <div className="mx-[50px] flex h-[568px] justify-between gap-[55px] overflow-visible">
-          <div className="relative flex-[1]">
+        <div className="mx-[50px] flex h-[400px] justify-between gap-[55px] overflow-visible lg:h-[568px]">
+          <div className="hidden flex-[1] lg:block">
             <div className="relative size-full">
               <MascotBackground />
               <MascotWithShake />
@@ -183,20 +183,20 @@ function App() {
                 CA: very very soon....
                 <Icon className="ml-[15px] text-[18px]" iconGlyph=""></Icon>
               </span>
-              <span className="block select-none font-passionOne text-[165px]/[77%] text-[#FFFFFF] text-shadow-display">
+              <span className="block select-none font-passionOne text-[100px]/[77%] text-[#FFFFFF] text-shadow-display lg:text-[165px]/[77%]">
                 BUNNY DOG
               </span>
-              <span className="select-none font-passionOne text-[150px]/[77%] text-[#d584ea] text-shadow-display">
+              <span className="select-none font-passionOne text-[100px]/[77%] text-[#d584ea] text-shadow-display lg:text-[150px]/[77%]">
                 MEME
               </span>
               <div className="flex">
-                <span className="flex-[2] font-corbel text-[25px] text-[#ffffffc9]">
+                <span className="flex-[2] font-corbel text-[15px] text-[#ffffffc9] lg:text-[25px]">
                   BunnyBun: Spin, Laugh, Earn – Where Every Turn Brings You
                   Closer to Your Dreams.
                 </span>
                 <a
                   href="#"
-                  className="inline-block max-h-[70px] items-center rounded-[30px] bg-[#8B5292] px-[25px] py-[10px] font-jockey text-[30px] text-white transition hover:bg-[#67406c]"
+                  className="inline-block max-h-[40px] items-center rounded-[30px] bg-[#8B5292] px-[25px] py-[10px] font-jockey text-[15px] text-white transition hover:bg-[#67406c] lg:max-h-[70px] lg:text-[30px]"
                 >
                   VERY VERY SOON...
                 </a>
@@ -244,10 +244,10 @@ function App() {
       <div className="relative bg-[#251A22] py-[65px]" id="about">
         <MascotComponent></MascotComponent>
 
-        <div className="mx-[100px]">
+        <div className="mx-[20px] lg:mx-[100px]">
           <p className="mb-[50px] font-jockey text-[50px] text-white">ABOUT</p>
 
-          <div className="flex h-[114px] w-[1000px] items-stretch">
+          <div className="flex h-[300px] w-[500px] max-w-full items-stretch sm:h-[140px] xl:h-[114px] xl:w-[1000px]">
             <div className="flex items-center">
               <Icon className="text-[18px] text-[#F489B8]" iconGlyph=""></Icon>
             </div>
@@ -278,7 +278,7 @@ function App() {
             </div>
           </div>
 
-          <div className="mt-[50px] flex h-[171px] w-[900px] items-stretch">
+          <div className="mt-[100px] flex h-[600px] w-[750px] max-w-full items-stretch sm:h-[250px] lg:mt-[50px] lg:h-[171px] lg:w-[900px]">
             <div className="flex items-center">
               <Icon className="text-[18px] text-[#F489B8]" iconGlyph=""></Icon>
             </div>
@@ -310,8 +310,8 @@ function App() {
             </div>
           </div>
 
-          <div className="mt-[20px] flex gap-[20px]">
-            <div className="mt-[105px] flex h-[260px] items-stretch">
+          <div className="my-[100px] flex max-w-full flex-col sm:mt-[20px] sm:gap-[20px] lg:mb-0 lg:mt-[20px] lg:flex-row">
+            <div className="mt-[105px] flex h-[700px] items-stretch sm:h-[260px]">
               <div className="flex items-center">
                 <Icon
                   className="text-[18px] text-[#F489B8]"
@@ -356,7 +356,7 @@ function App() {
               </div>
             </div>
 
-            <div className="mt-[105px] flex h-[170px] items-stretch">
+            <div className="mt-[105px] flex h-[360px] items-stretch sm:h-[170px]">
               <div className="flex items-center">
                 <Icon
                   className="text-[18px] text-[#F489B8]"
@@ -437,12 +437,12 @@ function App() {
         className="bg-gradient-to-b from-[#2C1225] to-[#2B2C37] py-[65px]"
         id="roadmap"
       >
-        <div className="mx-[100px]">
+        <div className="mx-[20px] lg:mx-[100px]">
           <p className="mb-[50px] font-jockey text-[50px] text-white">
             ROADMAP
           </p>
 
-          <div className="grid grid-cols-2 flex-row flex-wrap gap-[50px]">
+          <div className="grid grid-cols-1 flex-row flex-wrap gap-[50px] lg:grid-cols-2">
             <div className="rounded-[20px] border border-[#DA7BA5] bg-[#00000023] px-[30px] py-[40px] ">
               <p className="font-corbel text-[26px] font-bold text-white">
                 1. Launch token on{' '}

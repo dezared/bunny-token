@@ -8,7 +8,7 @@ const MascotComponent = () => {
   })
 
   return (
-    <div className="absolute right-0 top-[20px]" ref={ref}>
+    <div className="absolute right-0 top-[20px] hidden md:block" ref={ref}>
       <motion.div
         initial={{ opacity: 0, x: 0 }} // Маскот невидим и на месте
         animate={{
@@ -24,7 +24,11 @@ const MascotComponent = () => {
           ease: 'easeInOut' // Плавное изменение
         }}
       >
-        <img src="/images/woof-right.png" alt="Icon" className="size-[737px]" />
+        <img
+          src="/images/woof-right.png"
+          alt="Icon"
+          className="size-[400px] xl:size-[737px]"
+        />
       </motion.div>
     </div>
   )
