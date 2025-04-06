@@ -148,6 +148,17 @@ function App() {
                 iconGlyph=""
               />
             </a>
+            <a
+              className="flex size-[50px] items-center justify-center rounded-[100%] bg-[#7717824d]"
+              href="https://t.me/+4jDM-ut9OdgyNmIy"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <IconBrand
+                className="text-[30px] text-[#b3b3b34d] transition hover:text-white"
+                iconGlyph=""
+              />
+            </a>
           </div>
         </div>
         <div className="mx-[50px] flex h-[450px] justify-between gap-[55px] overflow-visible lg:h-[568px]">
