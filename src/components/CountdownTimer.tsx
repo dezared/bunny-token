@@ -31,12 +31,12 @@ const CountdownTimer = () => {
   if (!timeLeft) {
     return (
       <div className="text-center text-4xl font-bold text-red-500">
-        Let's go!
+        Let&apos;s go!
       </div>
     )
   }
 
-  const pad = (n) => String(n).padStart(2, '0')
+  const pad = (n: number) => String(n).padStart(2, '0')
 
   return (
     <div className="text-center">
@@ -53,7 +53,12 @@ const CountdownTimer = () => {
   )
 }
 
-const TimeBlock = ({ value, label }) => (
+interface TimeBlockProps {
+  value: string
+  label: string
+}
+
+const TimeBlock: React.FC<TimeBlockProps> = ({ value, label }) => (
   <div className="flex animate-pulse flex-col items-center">
     <span>{value}</span>
     <span className="text-sm text-white">{label}</span>
