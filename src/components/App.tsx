@@ -3,6 +3,7 @@ import { Icon, IconBrand } from './Icon'
 import { ToastContainer, toast } from 'react-toastify'
 import InfiniteLooper from './RunningLine'
 import MascotComponent from './WoofComponent'
+import CountdownTimer from './CountdownTimer'
 
 const handleCopy = async ({ text }: { text: string }) => {
   try {
@@ -123,7 +124,7 @@ function App() {
               ABOUT
             </button>
             <button
-              className="l:text-[30px] font-jockey text-[20px] text-[#E0C6E3] transition text-shadow-display hover:text-[#bfaac1]"
+              className="font-jockey text-[20px] text-[#E0C6E3] transition text-shadow-display hover:text-[#bfaac1] lg:text-[30px]"
               onClick={() => {
                 const mainElement = document.getElementById('roadmap')
                 if (mainElement) {
@@ -149,7 +150,7 @@ function App() {
             </a>
           </div>
         </div>
-        <div className="mx-[50px] flex h-[400px] justify-between gap-[55px] overflow-visible lg:h-[568px]">
+        <div className="mx-[50px] flex h-[450px] justify-between gap-[55px] overflow-visible lg:h-[568px]">
           <div className="hidden flex-[1] lg:block">
             <div className="relative size-full">
               <MascotBackground />
@@ -202,6 +203,9 @@ function App() {
                 </a>
               </div>
             </motion.div>
+            <span className="my-[15px] mb-[30px] inline-block select-none rounded-[20px] bg-[#8b52929c] px-[23px] py-[8px] font-corbel text-[20px] text-white sm:mb-[15px]">
+              <CountdownTimer></CountdownTimer>
+            </span>
           </div>
         </div>
       </div>
