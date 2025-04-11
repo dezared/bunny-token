@@ -190,9 +190,13 @@ function App() {
             >
               <span
                 className="mb-[15px] inline-block cursor-pointer select-none rounded-[20px] bg-[#8b52929c] px-[23px] py-[8px] font-corbel text-[20px] text-white transition active:bg-[#8b529242]"
-                onClick={() => handleCopy({ text: 'You find ester egg! :)' })}
+                onClick={() =>
+                  handleCopy({
+                    text: 'zSUShDR4CA2XPT24LcvgLs1QTDNpNJmbidH9AUdpump'
+                  })
+                }
               >
-                CA: very very soon....
+                CA: zSUShDR4CA2XPT24LcvgLs1QTDNpNJmbidH9AUdpump
                 <Icon className="ml-[15px] text-[18px]" iconGlyph=""></Icon>
               </span>
               <span className="block select-none font-passionOne text-[100px]/[77%] text-[#FFFFFF] text-shadow-display lg:text-[165px]/[77%]">
@@ -207,16 +211,15 @@ function App() {
                   Closer to Your Dreams.
                 </span>
                 <a
-                  href="#"
+                  href="https://pump.fun/coin/zSUShDR4CA2XPT24LcvgLs1QTDNpNJmbidH9AUdpump"
+                  target="_blank"
                   className="inline-block max-h-[40px] items-center rounded-[30px] bg-[#8B5292] px-[25px] py-[10px] font-jockey text-[15px] text-white transition hover:bg-[#67406c] lg:max-h-[70px] lg:text-[30px]"
+                  rel="noreferrer"
                 >
-                  VERY VERY SOON...
+                  BUY $BUUNYBUN
                 </a>
               </div>
             </motion.div>
-            <span className="my-[15px] mb-[30px] inline-block select-none rounded-[20px] bg-[#8b52929c] px-[23px] py-[8px] font-corbel text-[20px] text-white sm:mb-[15px]">
-              <CountdownTimer></CountdownTimer>
-            </span>
           </div>
         </div>
       </div>
@@ -464,6 +467,10 @@ function App() {
                 <span className="text-[29px] font-bold text-[#F489B8]">
                   Solana
                 </span>
+                <Icon
+                  className="ml-[10px] text-[25px] text-[#77f177]"
+                  iconGlyph=""
+                ></Icon>
               </p>
               <p className="font-corbel text-[20px] text-[#ffffffda]">
                 We will launch the token on the Solana network with a total
